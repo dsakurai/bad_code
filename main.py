@@ -29,7 +29,7 @@ def age_in_days(birthday, today):
         # return None
 
     # 誕生日の年月日
-    year, month, day = split_birthday(birthday, "MM/DD/YYYY")
+    year, month, day = birthday.split("-")
 
     # 今日の年月日
     t_year, t_month, t_day = today.split("-")
